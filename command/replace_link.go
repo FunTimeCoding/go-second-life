@@ -2,13 +2,13 @@ package command
 
 import "strings"
 
-func (c *Command) ReplaceLinkMessage(
+func (c *Command) ReplaceLink(
 	prefix string,
 	replace string,
 ) {
-	for i, element := range c.Q {
+	for i, element := range c.L {
 		if strings.HasPrefix(element.T, prefix) {
-			c.Q[i].T = replace
+			c.L[i].T = replace
 		}
 	}
 }

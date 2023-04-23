@@ -17,20 +17,9 @@ func TestSplitEmpty(t *testing.T) {
 func TestSplitNoSplit(t *testing.T) {
 	assert.Any(
 		t,
-		[]Command{{Q: []link_message.Message{{T: "a"}}}},
+		[]Command{{L: []link_message.Message{{T: "a"}}}},
 		Split(
-			&Command{Q: []link_message.Message{{T: "a"}}},
-			100,
-		),
-	)
-}
-
-func TestSplitNoSplitQueued(t *testing.T) {
-	assert.Any(
-		t,
-		[]Command{{Q: []link_message.Message{{T: "a"}}}},
-		Split(
-			&Command{Q: []link_message.Message{{T: "a"}}},
+			&Command{L: []link_message.Message{{T: "a"}}},
 			100,
 		),
 	)
@@ -40,11 +29,11 @@ func TestSplit(t *testing.T) {
 	assert.Any(
 		t,
 		[]Command{
-			{Q: []link_message.Message{{T: "a"}}},
-			{Q: []link_message.Message{{T: "b"}}},
+			{L: []link_message.Message{{T: "a"}}},
+			{L: []link_message.Message{{T: "b"}}},
 		},
 		Split(
-			&Command{Q: []link_message.Message{{T: "a"}, {T: "b"}}},
+			&Command{L: []link_message.Message{{T: "a"}, {T: "b"}}},
 			50,
 		),
 	)

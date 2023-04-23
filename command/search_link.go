@@ -2,11 +2,11 @@ package command
 
 import "strings"
 
-func (c *Command) SearchLinkMessage(
+func (c *Command) SearchLink(
 	number int,
 	search []string,
 ) int {
-	for messageIndex, message := range c.Q {
+	for messageIndex, message := range c.L {
 		if message.N == number {
 			arguments := strings.Split(message.T, ",")
 

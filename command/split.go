@@ -5,7 +5,7 @@ func Split(
 	maximumSize int,
 ) []Command {
 	var original Command
-	original.Q = append(original.Q, c.Q...)
+	original.L = append(original.L, c.L...)
 	original.O = c.O
 	var commands []Command
 
@@ -13,12 +13,12 @@ func Split(
 		var command Command
 		var split bool
 
-		if !split && len(original.Q) > 0 {
+		if !split && len(original.L) > 0 {
 			var lastIndex int
 			var sliceEmptied bool
 
-			for i, message := range original.Q {
-				command.Q = append(command.Q, message)
+			for i, message := range original.L {
+				command.L = append(command.L, message)
 				size := command.Size()
 
 				if size == maximumSize {
@@ -26,7 +26,7 @@ func Split(
 
 					break
 				} else if size > maximumSize {
-					if command.RemoveLastQueuedMessage() {
+					if command.RemoveLast() {
 						sliceEmptied = true
 					}
 
@@ -39,9 +39,9 @@ func Split(
 			}
 
 			if sliceEmptied {
-				original.Q = nil
+				original.L = nil
 			} else {
-				original.Q = original.Q[lastIndex+1:]
+				original.L = original.L[lastIndex+1:]
 			}
 		}
 
@@ -65,7 +65,7 @@ func Split(
 			commands = append(commands, command)
 		}
 
-		if len(original.Q) == 0 && original.O == "" {
+		if len(original.L) == 0 && original.O == "" {
 			if !split {
 				commands = append(commands, command)
 			}
