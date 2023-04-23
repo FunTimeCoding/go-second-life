@@ -6,9 +6,9 @@ func (c *Command) ReplaceLinkMessage(
 	prefix string,
 	replace string,
 ) {
-	for i, element := range c.L {
+	for i, element := range c.Q {
 		if strings.HasPrefix(element.T, prefix) {
-			c.L[i].T = replace
+			c.Q[i].T = replace
 		}
 	}
 }

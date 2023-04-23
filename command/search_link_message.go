@@ -6,7 +6,7 @@ func (c *Command) SearchLinkMessage(
 	number int,
 	search []string,
 ) int {
-	for messageIndex, message := range c.L {
+	for messageIndex, message := range c.Q {
 		if message.N == number {
 			arguments := strings.Split(message.T, ",")
 

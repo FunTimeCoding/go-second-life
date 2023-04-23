@@ -1,15 +1,15 @@
 package command
 
 func (c *Command) RemoveLastMessage() bool {
-	position := len(c.L) - 1
+	position := len(c.Q) - 1
 
 	if position == -1 || position == 0 {
-		c.L = nil
+		c.Q = nil
 
 		return true
 	}
 
-	c.L = c.L[:position]
+	c.Q = c.Q[:position]
 
 	return false
 }

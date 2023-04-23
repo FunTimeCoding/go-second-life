@@ -8,8 +8,8 @@ func (c *Command) DeleteLinkMessage(
 
 	if index != -1 {
 		// Shift left
-		copy(c.L[index:], c.L[index+1:])
+		copy(c.Q[index:], c.Q[index+1:])
 		// Remove last
-		c.L = c.L[:len(c.L)-1]
+		c.Q = c.Q[:len(c.Q)-1]
 	}
 }
