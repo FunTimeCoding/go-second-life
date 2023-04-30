@@ -2,7 +2,7 @@ module github.com/funtimecoding/go-second-life
 
 go 1.20
 
-require github.com/funtimecoding/go-library v0.0.0-20230422170523-88659e57fcde
+require github.com/funtimecoding/go-library v0.0.0-20230430174315-c656ccbb98c7
 
 require (
 	github.com/google/go-cmp v0.5.9 // indirect
