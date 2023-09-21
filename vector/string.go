@@ -2,7 +2,7 @@ package vector
 
 import (
 	"fmt"
-	"github.com/funtimecoding/go-library/floats"
+	"github.com/funtimecoding/go-library/pkg/floats"
 )
 
 func (v *Vector) String() string {

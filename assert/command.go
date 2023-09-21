@@ -1,7 +1,7 @@
 package assert
 
 import (
-	"github.com/funtimecoding/go-library/object_notation"
+	"github.com/funtimecoding/go-library/pkg/object_notation"
 	"github.com/funtimecoding/go-second-life/command"
 	"testing"
 )

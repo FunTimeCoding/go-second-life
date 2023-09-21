@@ -1,7 +1,7 @@
 package command
 
 import (
-	"github.com/funtimecoding/go-library/assert"
+	"github.com/funtimecoding/go-library/pkg/assert"
 	"github.com/funtimecoding/go-second-life/link_message"
 	"testing"
 )

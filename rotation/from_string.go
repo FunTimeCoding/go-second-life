@@ -1,7 +1,7 @@
 package rotation
 
 import (
-	stringsHelper "github.com/funtimecoding/go-library/strings"
+	stringsHelper "github.com/funtimecoding/go-library/pkg/strings"
 	"strings"
 )
 

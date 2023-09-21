@@ -2,7 +2,7 @@ package rotation
 
 import (
 	"fmt"
-	"github.com/funtimecoding/go-library/floats"
+	"github.com/funtimecoding/go-library/pkg/floats"
 )
 
 func (r *Rotation) String() string {

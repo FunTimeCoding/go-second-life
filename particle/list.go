@@ -1,8 +1,8 @@
 package particle
 
 import (
-	"github.com/funtimecoding/go-library/floats"
-	"github.com/funtimecoding/go-library/integers"
+	"github.com/funtimecoding/go-library/pkg/floats"
+	"github.com/funtimecoding/go-library/pkg/integers"
 	"github.com/funtimecoding/go-second-life/color"
 	"github.com/funtimecoding/go-second-life/vector"
 )

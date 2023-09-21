@@ -1,6 +1,6 @@
 package vector
 
-import "github.com/funtimecoding/go-library/math"
+import "github.com/funtimecoding/go-library/pkg/math"
 
 func (v *Vector) Merge(
 	other *Vector,

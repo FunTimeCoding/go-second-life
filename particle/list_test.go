@@ -1,7 +1,7 @@
 package particle
 
 import (
-	"github.com/funtimecoding/go-library/assert"
+	"github.com/funtimecoding/go-library/pkg/assert"
 	"github.com/funtimecoding/go-second-life/color"
 	"github.com/funtimecoding/go-second-life/vector"
 	"math"

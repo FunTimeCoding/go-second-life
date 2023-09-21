@@ -2,7 +2,7 @@ package color
 
 import (
 	"fmt"
-	"github.com/funtimecoding/go-library/integers"
+	"github.com/funtimecoding/go-library/pkg/integers"
 )
 
 func (c *Color) StringRGB() string {

@@ -1,6 +1,6 @@
 package vector
 
-import "github.com/funtimecoding/go-library/math/round"
+import "github.com/funtimecoding/go-library/pkg/math/round"
 
 func (v *Vector) Round(decimals int) *Vector {
 	return New(

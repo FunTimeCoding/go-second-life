@@ -1,7 +1,7 @@
 package web
 
 import (
-	"github.com/funtimecoding/go-library/assert"
+	"github.com/funtimecoding/go-library/pkg/assert"
 	"testing"
 )
 
