@@ -1,8 +1,10 @@
 module github.com/funtimecoding/go-second-life
 
-go 1.21.1
+go 1.21.4
 
-require github.com/funtimecoding/go-library v0.8.4
+toolchain go1.21.5
+
+require github.com/funtimecoding/go-library v0.8.27
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
