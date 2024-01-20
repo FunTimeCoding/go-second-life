@@ -1,7 +1,7 @@
 package assert
 
 import (
-	"github.com/funtimecoding/go-library/pkg/object_notation"
+	"github.com/funtimecoding/go-library/pkg/notation"
 	"github.com/funtimecoding/go-second-life/command"
 	"testing"
 )
@@ -12,7 +12,7 @@ func Command(
 	actual *command.Command,
 ) {
 	t.Helper()
-	t.Logf("%s", object_notation.Format(actual))
+	t.Logf("%s", notation.Format(actual))
 	expectedCount := len(expected.L)
 	actualCount := len(actual.L)
 

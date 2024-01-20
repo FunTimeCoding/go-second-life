@@ -1,7 +1,7 @@
 package command
 
-import "github.com/funtimecoding/go-library/pkg/object_notation"
+import "github.com/funtimecoding/go-library/pkg/notation"
 
 func (c *Command) Size() int {
-	return len(object_notation.Encode(c, false))
+	return len(notation.Encode(c, false))
 }
