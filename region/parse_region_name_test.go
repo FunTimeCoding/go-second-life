@@ -1,4 +1,4 @@
-package second_life
+package region
 
 import (
 	"github.com/funtimecoding/go-library/pkg/assert"
