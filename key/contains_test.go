@@ -14,7 +14,6 @@ func TestContains(t *testing.T) {
 			New(strings.Alfa),
 		),
 	)
-
 	assert.False(
 		t,
 		Contains(

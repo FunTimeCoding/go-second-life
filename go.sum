@@ -1,8 +1,8 @@
 github.com/davecgh/go-spew v0.0.0-20161028175848-04cdfd42973b/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc h1:U9qPSI2PIWSS1VwoXQT9A3Wy9MM3WgvqSxFWenqJduM=
 github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
-github.com/funtimecoding/go-library v0.8.75 h1:bo7RQU4j193OjTB612W0jcfR250BXZNgfyHGxQErtFs=
-github.com/funtimecoding/go-library v0.8.75/go.mod h1:nOdeCUEAE2rtD33HQgA1n1nxjujUjtWd1O8O8T959AU=
+github.com/funtimecoding/go-library v0.8.77 h1:1aM/cqV9A3FJ7LlTurMF/gl93wW6/mgniZrWUIq8DZg=
+github.com/funtimecoding/go-library v0.8.77/go.mod h1:mLtP8l5k36+GKSUzy4mG6YUPYX0A4K+6yLLTBNcjibU=
 github.com/google/go-cmp v0.6.0 h1:ofyhxvXcZhMsU5ulbFiLKl/XBFqE1GSq7atu8tAmTRI=
 github.com/google/go-cmp v0.6.0/go.mod h1:17dUlkBOakJ0+DkrSSNjCkIjxS6bF9zb3elmeNGIjoY=
 github.com/pmezard/go-difflib v0.0.0-20151028094244-d8ed2627bdf0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
