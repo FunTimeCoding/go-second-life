@@ -6,8 +6,8 @@ import (
 )
 
 func New(
-	c face.Clock,
+	w face.WebClient,
 	l secondLife.AgentLogger,
 ) *Client {
-	return &Client{clock: c, logger: l}
+	return &Client{web: w, logger: l}
 }

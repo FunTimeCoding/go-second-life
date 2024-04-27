@@ -16,7 +16,7 @@ func (c *Client) Post(
 	locator string,
 	o *command.Command,
 ) bool {
-	result, e := c.postMeasure(locator, o)
+	result, e := c.web.Post(locator, o)
 
 	if e != nil {
 		text := e.Error()

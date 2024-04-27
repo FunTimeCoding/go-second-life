@@ -6,6 +6,6 @@ import (
 )
 
 type Client struct {
-	clock  face.Clock
+	web    face.WebClient
 	logger secondLife.AgentLogger
 }
