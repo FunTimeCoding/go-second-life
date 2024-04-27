@@ -1,6 +1,9 @@
 package face
 
-import "github.com/funtimecoding/go-second-life/command"
+import (
+	"github.com/funtimecoding/go-library/pkg/web/web_client/web_response"
+	"github.com/funtimecoding/go-second-life/command"
+)
 
 type InworldClient interface {
 	IsInworldClient()
@@ -8,5 +11,5 @@ type InworldClient interface {
 	Post(
 		locator string,
 		o *command.Command,
-	) bool
+	) (bool, *web_response.Response)
 }

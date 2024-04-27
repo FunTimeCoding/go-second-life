@@ -2,6 +2,7 @@ package inworld_client
 
 import (
 	"github.com/funtimecoding/go-library/pkg/web"
+	"github.com/funtimecoding/go-library/pkg/web/web_client/web_response"
 	"github.com/funtimecoding/go-second-life/command"
 	secondLifeWeb "github.com/funtimecoding/go-second-life/web"
 	"net/http"
@@ -15,7 +16,7 @@ import (
 func (c *Client) Post(
 	locator string,
 	o *command.Command,
-) bool {
+) (bool, *web_response.Response) {
 	result, e := c.web.Post(locator, o)
 
 	if e != nil {
@@ -31,7 +32,7 @@ func (c *Client) Post(
 			c.logger.Sentry(e)
 		}
 
-		return false
+		return false, result
 	}
 
 	// Avoid confusion: These are not errors happening in the inworld object
@@ -39,30 +40,30 @@ func (c *Client) Post(
 	// See: http://wiki.secondlife.com/wiki/Http_response
 	switch s := result.Response.StatusCode; s {
 	case http.StatusOK:
-		return true
+		return true, result
 	case http.StatusNotFound:
 		// The object locator was released
 		c.proxyError(locator, s)
 	case http.StatusBadGateway:
 		c.proxyError(locator, s)
 	default:
-		body := web.ReadString(result.Response)
+		b := web.ReadString(result.Response)
 
 		if s == http.StatusServiceUnavailable &&
-			body == secondLifeWeb.ServiceUnavailable {
+			b == secondLifeWeb.ServiceUnavailable {
 			c.proxyError(locator, s)
 		} else if s == http.StatusInternalServerError &&
-			body == secondLifeWeb.InternalServerError {
+			b == secondLifeWeb.InternalServerError {
 			c.proxyError(locator, s)
 		} else {
 			c.logger.Sentryf(
 				"object replied bad status (%d) (%s): %s",
 				s,
 				locator,
-				body,
+				b,
 			)
 		}
 	}
 
-	return false
+	return false, result
 }
