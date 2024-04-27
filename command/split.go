@@ -13,7 +13,7 @@ func Split(
 		var command Command
 		var split bool
 
-		if !split && len(original.L) > 0 {
+		if len(original.L) > 0 {
 			var lastIndex int
 			var sliceEmptied bool
 
