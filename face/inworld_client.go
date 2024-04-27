@@ -8,5 +8,5 @@ type InworldClient interface {
 	Post(
 		locator string,
 		o *command.Command,
-	)
+	) bool
 }
