@@ -31,47 +31,34 @@ func List(
 	sourceEndAngle float64,
 ) []string {
 	return []string{
-		integers.ToString(Flags),
-		integers.ToString(flags),
+		integers.ToString(Flags), integers.ToString(flags),
 
-		integers.ToString(StartColor),
-		startColor.String(),
+		integers.ToString(StartColor), startColor.String(),
 
-		integers.ToString(EndColor),
-		endColor.String(),
+		integers.ToString(EndColor), endColor.String(),
 
-		integers.ToString(StartAlpha),
-		floats.ToString(startAlpha),
+		integers.ToString(StartAlpha), floats.ToString(startAlpha),
 
-		integers.ToString(EndAlpha),
-		floats.ToString(endAlpha),
+		integers.ToString(EndAlpha), floats.ToString(endAlpha),
 
-		integers.ToString(StartScale),
-		startScale.String(),
+		integers.ToString(StartScale), startScale.String(),
 
-		integers.ToString(EndScale),
-		endScale.String(),
+		integers.ToString(EndScale), endScale.String(),
 
-		integers.ToString(MaximumAge),
-		floats.ToString(maximumAge),
+		integers.ToString(MaximumAge), floats.ToString(maximumAge),
 
-		integers.ToString(SourceAcceleration),
-		sourceAcceleration.String(),
+		integers.ToString(SourceAcceleration), sourceAcceleration.String(),
 
-		integers.ToString(SourcePattern),
-		integers.ToString(sourcePattern),
+		integers.ToString(SourcePattern), integers.ToString(sourcePattern),
 
-		integers.ToString(SourceTexture),
-		sourceTexture,
+		integers.ToString(SourceTexture), sourceTexture,
 
-		integers.ToString(SourceBurstRate),
-		floats.ToString(sourceBurstRate),
+		integers.ToString(SourceBurstRate), floats.ToString(sourceBurstRate),
 
 		integers.ToString(SourceBurstParticleCount),
 		integers.ToString(sourceCount),
 
-		integers.ToString(SourceBurstRadius),
-		floats.ToString(sourceRadius),
+		integers.ToString(SourceBurstRadius), floats.ToString(sourceRadius),
 
 		integers.ToString(SourceBurstSpeedMinimum),
 		floats.ToString(sourceMinimumSpeed),
@@ -82,11 +69,9 @@ func List(
 		integers.ToString(SourceMaximumAge),
 		floats.ToString(sourceMaximumAge),
 
-		integers.ToString(SourceTargetKey),
-		sourceTarget,
+		integers.ToString(SourceTargetKey), sourceTarget,
 
-		integers.ToString(SourceOmega),
-		sourceOmega.String(),
+		integers.ToString(SourceOmega), sourceOmega.String(),
 
 		integers.ToString(SourceAngleBegin),
 		floats.ToString(sourceStartAngle),
