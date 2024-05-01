@@ -22,21 +22,7 @@ func TestConstant(t *testing.T) {
 	)
 	assert.Any(
 		t,
-		[]int{
-			8,
-			9,
-			12,
-			13,
-			15,
-			16,
-			17,
-			18,
-			19,
-			20,
-			21,
-			22,
-			23,
-		},
+		[]int{8, 9, 12, 13, 15, 16, 17, 18, 19, 20, 21, 22, 23},
 		[]int{
 			SourceAcceleration,
 			SourcePattern,
@@ -55,17 +41,18 @@ func TestConstant(t *testing.T) {
 	)
 	assert.Any(
 		t,
+		[]int{1, 2, 4, 8, 16},
 		[]int{
-			1,
-			2,
-			4,
-			16,
-			32,
-			64,
-			128,
-			256,
-			1024,
+			PatternDrop,
+			PatternExplode,
+			PatternAngle,
+			PatternAngleCone,
+			PatternAngleConeEmpty,
 		},
+	)
+	assert.Any(
+		t,
+		[]int{1, 2, 4, 16, 32, 64, 128, 256, 1024},
 		[]int{
 			FlagInterpolateColorMask,
 			FlagInterpolateScaleMask,

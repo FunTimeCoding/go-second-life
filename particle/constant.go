@@ -1,5 +1,6 @@
 package particle
 
+// Flag
 const (
 	FlagInterpolateColorMask = 0x001
 	FlagInterpolateScaleMask = 0x002
@@ -10,6 +11,15 @@ const (
 	FlagTargetLinearMask     = 0x080
 	FlagEmissiveMask         = 0x100
 	FlagRibbonMask           = 0x400
+)
+
+// Pattern
+const (
+	PatternDrop           = 0x01
+	PatternExplode        = 0x02
+	PatternAngle          = 0x04
+	PatternAngleCone      = 0x08
+	PatternAngleConeEmpty = 0x10
 )
 
 const (
