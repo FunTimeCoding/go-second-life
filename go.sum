@@ -1,8 +1,8 @@
 github.com/davecgh/go-spew v0.0.0-20161028175848-04cdfd42973b/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc h1:U9qPSI2PIWSS1VwoXQT9A3Wy9MM3WgvqSxFWenqJduM=
 github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
-github.com/funtimecoding/go-library v0.8.126 h1:GQ2MBqV6sfJ+E2LU0IbED6uFW1OuF4uJcOnVWSOS7NA=
-github.com/funtimecoding/go-library v0.8.126/go.mod h1:oJLB3as6/vplDG79xsgoE6xckN7tDBnS1HLS2HHZHxI=
+github.com/funtimecoding/go-library v0.8.132 h1:tolqxMdrK4QOv+oCVGDLkksWiHX5AP1lj1FpaNQ2AXg=
+github.com/funtimecoding/go-library v0.8.132/go.mod h1:oJLB3as6/vplDG79xsgoE6xckN7tDBnS1HLS2HHZHxI=
 github.com/getsentry/sentry-go v0.27.0 h1:Pv98CIbtB3LkMWmXi4Joa5OOcwbmnX88sF5qbK3r3Ps=
 github.com/getsentry/sentry-go v0.27.0/go.mod h1:lc76E2QywIyW8WuBnwl8Lc4bkmQH4+w1gwTf25trprY=
 github.com/go-errors/errors v1.4.2 h1:J6MZopCL4uSllY1OfXM374weqZFFItUbrImctkmUxIA=

@@ -53,4 +53,34 @@ func TestConstant(t *testing.T) {
 			SourceAngleEnd,
 		},
 	)
+	assert.Any(
+		t,
+		[]int{
+			1,
+			2,
+			4,
+			16,
+			32,
+			64,
+			128,
+			256,
+			1024,
+		},
+		[]int{
+			FlagInterpolateColorMask,
+			FlagInterpolateScaleMask,
+			FlagBounceMask,
+			FlagFollowSourceMask,
+			FlagFollowVelocityMask,
+			FlagTargetPositionMask,
+			FlagTargetLinearMask,
+			FlagEmissiveMask,
+			FlagRibbonMask,
+		},
+	)
+	assert.Integer(
+		t,
+		259,
+		FlagInterpolateColorMask|FlagInterpolateScaleMask|FlagEmissiveMask,
+	)
 }

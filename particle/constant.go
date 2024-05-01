@@ -1,6 +1,18 @@
 package particle
 
 const (
+	FlagInterpolateColorMask = 0x001
+	FlagInterpolateScaleMask = 0x002
+	FlagBounceMask           = 0x004
+	FlagFollowSourceMask     = 0x010
+	FlagFollowVelocityMask   = 0x020
+	FlagTargetPositionMask   = 0x040
+	FlagTargetLinearMask     = 0x080
+	FlagEmissiveMask         = 0x100
+	FlagRibbonMask           = 0x400
+)
+
+const (
 	Flags      = int(0)
 	StartColor = int(1)
 	StartAlpha = int(2)
