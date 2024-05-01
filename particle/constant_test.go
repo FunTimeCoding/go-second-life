@@ -52,8 +52,9 @@ func TestConstant(t *testing.T) {
 	)
 	assert.Any(
 		t,
-		[]int{1, 2, 4, 16, 32, 64, 128, 256, 1024},
+		[]int{0, 1, 2, 4, 16, 32, 64, 128, 256, 1024},
 		[]int{
+			FlagOff,
 			FlagInterpolateColorMask,
 			FlagInterpolateScaleMask,
 			FlagBounceMask,

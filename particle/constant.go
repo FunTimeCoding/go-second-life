@@ -2,6 +2,7 @@ package particle
 
 // Flag
 const (
+	FlagOff                  = 0x0
 	FlagInterpolateColorMask = 0x001
 	FlagInterpolateScaleMask = 0x002
 	FlagBounceMask           = 0x004
