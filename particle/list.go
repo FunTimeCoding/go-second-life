@@ -15,20 +15,20 @@ func List(
 	endAlpha float64,
 	startScale *vector.Vector,
 	endScale *vector.Vector,
-	age float64,
-	acceleration *vector.Vector,
-	pattern int,
-	texture string,
-	burstRate float64,
-	count int,
-	radius float64,
-	minimumSpeed float64,
-	maximumSpeed float64,
 	maximumAge float64,
-	target string,
-	omega *vector.Vector,
-	startAngle float64,
-	endAngle float64,
+	sourceAcceleration *vector.Vector,
+	sourcePattern int,
+	sourceTexture string,
+	sourceBurstRate float64,
+	sourceCount int,
+	sourceRadius float64,
+	sourceMinimumSpeed float64,
+	sourceMaximumSpeed float64,
+	sourceMaximumAge float64,
+	sourceTarget string,
+	sourceOmega *vector.Vector,
+	sourceStartAngle float64,
+	sourceEndAngle float64,
 ) []string {
 	return []string{
 		integers.ToString(Flags),
@@ -53,45 +53,45 @@ func List(
 		endScale.String(),
 
 		integers.ToString(MaximumAge),
-		floats.ToString(age),
-
-		integers.ToString(SourceAcceleration),
-		acceleration.String(),
-
-		integers.ToString(SourcePattern),
-		integers.ToString(pattern),
-
-		integers.ToString(SourceTexture),
-		texture,
-
-		integers.ToString(SourceBurstRate),
-		floats.ToString(burstRate),
-
-		integers.ToString(SourceBurstParticleCount),
-		integers.ToString(count),
-
-		integers.ToString(SourceBurstRadius),
-		floats.ToString(radius),
-
-		integers.ToString(SourceBurstSpeedMinimum),
-		floats.ToString(minimumSpeed),
-
-		integers.ToString(SourceBurstSpeedMaximum),
-		floats.ToString(maximumSpeed),
-
-		integers.ToString(SourceMaximumAge),
 		floats.ToString(maximumAge),
 
+		integers.ToString(SourceAcceleration),
+		sourceAcceleration.String(),
+
+		integers.ToString(SourcePattern),
+		integers.ToString(sourcePattern),
+
+		integers.ToString(SourceTexture),
+		sourceTexture,
+
+		integers.ToString(SourceBurstRate),
+		floats.ToString(sourceBurstRate),
+
+		integers.ToString(SourceBurstParticleCount),
+		integers.ToString(sourceCount),
+
+		integers.ToString(SourceBurstRadius),
+		floats.ToString(sourceRadius),
+
+		integers.ToString(SourceBurstSpeedMinimum),
+		floats.ToString(sourceMinimumSpeed),
+
+		integers.ToString(SourceBurstSpeedMaximum),
+		floats.ToString(sourceMaximumSpeed),
+
+		integers.ToString(SourceMaximumAge),
+		floats.ToString(sourceMaximumAge),
+
 		integers.ToString(SourceTargetKey),
-		target,
+		sourceTarget,
 
 		integers.ToString(SourceOmega),
-		omega.String(),
+		sourceOmega.String(),
 
 		integers.ToString(SourceAngleBegin),
-		floats.ToString(startAngle),
+		floats.ToString(sourceStartAngle),
 
 		integers.ToString(SourceAngleEnd),
-		floats.ToString(endAngle),
+		floats.ToString(sourceEndAngle),
 	}
 }
