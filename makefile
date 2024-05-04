@@ -5,11 +5,11 @@ all: test lint
 tool:
 	go install gotest.tools/gotestsum@latest
 
-lint:
-	golangci-lint run
-
 test:
 	gotestsum --format standard-quiet -- ./...
+
+lint:
+	golangci-lint run
 
 update:
 	for ELEMENT in $$(go list -f "{{if not (or .Main .Indirect)}}{{.Path}}{{end}}" -m all); do echo $${ELEMENT}; go get $${ELEMENT}; done
