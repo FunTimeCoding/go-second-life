@@ -2,6 +2,9 @@
 
 all: test lint
 
+tool:
+	go install gotest.tools/gotestsum@latest
+
 lint:
 	golangci-lint run
 
@@ -17,6 +20,3 @@ update-library:
 	GOPROXY=direct go get github.com/funtimecoding/go-library
 	@go mod tidy
 	@go-update
-
-tool:
-	go install gotest.tools/gotestsum@latest
