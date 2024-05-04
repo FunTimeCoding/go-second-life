@@ -1,5 +1,7 @@
 package face
 
+import "github.com/getsentry/sentry-go"
+
 type AgentLogger interface {
 	IsAgentLogger()
 
@@ -29,4 +31,6 @@ type AgentLogger interface {
 	Unexpected(v string)
 	// UnexpectedInteger panics
 	UnexpectedInteger(v int)
+
+	Hub() *sentry.Hub
 }
