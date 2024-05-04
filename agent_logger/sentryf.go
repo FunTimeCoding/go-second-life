@@ -3,7 +3,6 @@ package agent_logger
 import (
 	"fmt"
 	"github.com/funtimecoding/go-second-life/key"
-	"github.com/getsentry/sentry-go"
 )
 
 func (l *Logger) Sentryf(
@@ -26,5 +25,5 @@ func (l *Logger) Sentryf(
 		e = fmt.Errorf("%s %s\n", l.agent, t)
 	}
 
-	sentry.CaptureException(e)
+	l.hub.CaptureException(e)
 }
