@@ -3,20 +3,19 @@
 all: test lint
 
 tool:
-	go install gotest.tools/gotestsum@latest
+	@go install gotest.tools/gotestsum@latest
+	@GOPROXY=direct go install github.com/funtimecoding/go-library/cmd/golint@latest
+	@GOPROXY=direct go install github.com/funtimecoding/go-library/cmd/goupdate@latest
 
 test:
-	gotestsum --format standard-quiet -- ./...
+	@gotestsum --format standard-quiet -- ./...
 
 lint:
-	golangci-lint run
+	@golint
+	@golangci-lint run
 
 update:
-	for ELEMENT in $$(go list -f "{{if not (or .Main .Indirect)}}{{.Path}}{{end}}" -m all); do echo $${ELEMENT}; go get $${ELEMENT}; done
-	@go mod tidy
-	@go-update
+	@goupdate
 
 update-library:
-	GOPROXY=direct go get github.com/funtimecoding/go-library
-	@go mod tidy
-	@go-update
+	@goupdate --exclusive funtimecoding
