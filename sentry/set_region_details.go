@@ -1,4 +1,4 @@
-package web
+package sentry
 
 import (
 	"github.com/funtimecoding/go-second-life/vector"
