@@ -1,6 +1,7 @@
 package vector
 
 import (
+	"github.com/funtimecoding/go-library/pkg/separator"
 	stringsHelper "github.com/funtimecoding/go-library/pkg/strings"
 	"log"
 	"strings"
@@ -10,7 +11,7 @@ func FromStringCustom(
 	v string,
 	cutSet string,
 ) *Vector {
-	s := strings.Split(strings.Trim(v, cutSet), ",")
+	s := strings.Split(strings.Trim(v, cutSet), separator.Comma)
 
 	if len(s) != 3 {
 		log.Panicf("Invalid vector: %s %+v", v, s)

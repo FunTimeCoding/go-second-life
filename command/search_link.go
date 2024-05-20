@@ -1,6 +1,9 @@
 package command
 
-import "strings"
+import (
+	"github.com/funtimecoding/go-library/pkg/separator"
+	"strings"
+)
 
 func (c *Command) SearchLink(
 	number int,
@@ -8,7 +11,7 @@ func (c *Command) SearchLink(
 ) int {
 	for messageIndex, message := range c.L {
 		if message.N == number {
-			arguments := strings.Split(message.T, ",")
+			arguments := strings.Split(message.T, separator.Comma)
 
 			if len(search) > len(arguments) {
 				continue

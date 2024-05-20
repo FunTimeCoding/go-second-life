@@ -1,9 +1,6 @@
 package command
 
-import (
-	"fmt"
-	"strings"
-)
+import "fmt"
 
 func (c *Command) AddOwner(
 	format string,
@@ -17,7 +14,7 @@ func (c *Command) AddOwner(
 		text = format
 	}
 
-	text = strings.ReplaceAll(text, ",", Pipe)
+	text = Escape(text)
 
 	if c.O == "" {
 		c.O = text

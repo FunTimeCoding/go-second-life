@@ -1,6 +1,7 @@
 package rotation
 
 import (
+	"github.com/funtimecoding/go-library/pkg/separator"
 	stringsHelper "github.com/funtimecoding/go-library/pkg/strings"
 	"strings"
 )
@@ -8,7 +9,7 @@ import (
 func FromString(text string) *Rotation {
 	parts := strings.Split(
 		strings.TrimRight(strings.TrimLeft(text, "<"), ">"),
-		",",
+		separator.Comma,
 	)
 
 	return New(
