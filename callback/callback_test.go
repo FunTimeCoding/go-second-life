@@ -14,6 +14,7 @@ func TestCallback(t *testing.T) {
 			"\"Arguments\": [\"a\", \"text: 0.1\"]"+
 			"}",
 		&c,
+		false,
 	)
 	assert.String(t, "Test", c.Name)
 	assert.Any(t, []string{"a", "text: 0.1"}, c.Arguments)
