@@ -1,6 +1,9 @@
 package input
 
-import "github.com/funtimecoding/go-second-life/key"
+import (
+	"github.com/funtimecoding/go-second-life/alias"
+	"github.com/funtimecoding/go-second-life/key"
+)
 
 type Input struct {
 	User key.Key
@@ -11,8 +14,8 @@ type Input struct {
 	// Attach point of the object of the input
 	AttachPoint int
 
-	Menu          string
-	ButtonClicked string
+	Menu          alias.Menu
+	ButtonClicked alias.Button
 	TextEntered   string
 	ObjectTouched string
 
