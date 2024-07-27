@@ -1,31 +1,41 @@
 package dialog
 
-import "github.com/funtimecoding/go-library/pkg/strings"
+import (
+	"github.com/funtimecoding/go-second-life/alias"
+	"github.com/funtimecoding/go-second-life/alias/button"
+	"golang.org/x/exp/slices"
+	"sort"
+)
 
-const padButton = " "
-
-func SortAndPadButtons(buttons []string) []string {
-	length := len(buttons)
+func SortAndPadButtons(b []alias.Button) []alias.Button {
+	sort.Slice(
+		b,
+		func(
+			i int,
+			j int,
+		) bool {
+			return b[i] < b[j]
+		},
+	)
+	length := len(b)
 	var toPad int
 
 	if length <= 12 {
-		strings.Sort(buttons, false)
+		slices.Reverse(b)
 		// Pad to 12
 		toPad = 12 - length
 	} else if length%10 == 0 {
-		strings.Sort(buttons, true)
 		toPad = 0
 	} else {
-		strings.Sort(buttons, true)
 		// Pad to the next 10
 		modulo := length % 10
 		toPad = 10 - modulo
 	}
 
-	var padding []string
+	var pad []alias.Button
 
 	for i := 0; i < toPad; i++ {
-		padding = append(padding, padButton)
+		pad = append(pad, padButton)
 	}
 
 	if length <= 12 {
@@ -38,10 +48,10 @@ func SortAndPadButtons(buttons []string) []string {
 		// 1. order list alphabetically in reverse
 		// 2. pad if necessary
 		// 3. flip left column with right column, row by row
-		buttons = append(padding, buttons...)
+		b = append(pad, b...)
 
 		for i := 0; i < 12; i += 3 {
-			strings.Swap(buttons, i, i+2)
+			button.Swap(b, i, i+2)
 		}
 	} else {
 		// Index order with previous- and next-buttons:
@@ -54,16 +64,16 @@ func SortAndPadButtons(buttons []string) []string {
 		// 2. pad if necessary
 		// 3.1 alphabetically reverse blocks of 10
 		// 3.2 flip left column with right column, row by row
-		buttons = append(buttons, padding...)
-		newLength := len(buttons)
+		b = append(b, pad...)
+		newLength := len(b)
 
 		for i := 0; i < newLength; i += 10 {
-			strings.Reverse(buttons[i : i+10])
-			strings.Swap(buttons, i+7, i+9)
-			strings.Swap(buttons, i+4, i+6)
-			strings.Swap(buttons, i+1, i+3)
+			slices.Reverse(b[i : i+10])
+			button.Swap(b, i+7, i+9)
+			button.Swap(b, i+4, i+6)
+			button.Swap(b, i+1, i+3)
 		}
 	}
 
-	return buttons
+	return b
 }
