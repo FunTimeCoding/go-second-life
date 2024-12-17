@@ -1,7 +1,9 @@
 package agent_logger
 
 func (l *Logger) Sentry(e error) {
-	if e != nil {
-		l.Sentryf(e.Error())
+	if e == nil {
+		return
 	}
+
+	l.Sentryf("%s", e.Error())
 }
