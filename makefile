@@ -4,8 +4,8 @@ all: lint test
 
 tool:
 	@go install gotest.tools/gotestsum@latest
-	@GOPROXY=direct go install github.com/funtimecoding/go-library/cmd/golint@latest
 	@GOPROXY=direct go install github.com/funtimecoding/go-library/cmd/goupdate@latest
+	@GOPROXY=direct go install github.com/funtimecoding/go-library/cmd/golint@latest
 
 lint:
 	@golint --fix
