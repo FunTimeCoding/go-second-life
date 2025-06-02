@@ -1,8 +1,8 @@
 package vector
 
 import (
-	"github.com/funtimecoding/go-library/pkg/separator"
 	stringsHelper "github.com/funtimecoding/go-library/pkg/strings"
+	"github.com/funtimecoding/go-library/pkg/strings/separator"
 	"log"
 	"strings"
 )

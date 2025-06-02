@@ -20,9 +20,9 @@ func (l *Logger) Sentryf(
 	var e error
 
 	if l.agent == key.Null {
-		e = fmt.Errorf("%s\n", t)
+		e = fmt.Errorf("%s", t)
 	} else {
-		e = fmt.Errorf("%s %s\n", l.agent, t)
+		e = fmt.Errorf("%s %s", l.agent, t)
 	}
 
 	l.hub.CaptureException(e)

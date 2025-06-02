@@ -8,10 +8,10 @@ import (
 type Input struct {
 	User key.Key
 
-	// Avatar sitting on the object of the input
+	// Avatar sitting on the object, of the input
 	AvatarSitting key.Key
 
-	// Attach point of the object of the input
+	// Attach point of the object, of the input
 	AttachPoint int
 
 	Menu          alias.Menu

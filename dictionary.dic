@@ -4,6 +4,7 @@ emissive
 # Go
 GOPROXY
 Panicf
+staticcheck
 
 # Second Life
 secondlife
