@@ -1,0 +1,17 @@
+---
+version: '3'
+tasks:
+  default: {cmds: [{task: lint}, {task: test}], silent: true}
+  lint: {cmds: ['golint --fix', 'golangci-lint run'], silent: true}
+  test: {cmds: ['gotestsum --format standard-quiet'], silent: true}
+  update: {cmds: [goupdate], silent: true}
+  update-library: {cmds: ['goupdate --exclusive funtimecoding'], silent: true}
+  tool:
+    cmds:
+    - go install gotest.tools/gotestsum@latest
+    - export GOPROXY=direct
+    - go install github.com/funtimecoding/go-library/cmd/gobuild@latest
+    - go install github.com/funtimecoding/go-library/cmd/golint@latest
+    - go install github.com/funtimecoding/go-library/cmd/goupdate@latest
+    - curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/HEAD/install.sh | sh -s -- -b $(go env GOPATH)/bin v2.3.1
+    silent: true

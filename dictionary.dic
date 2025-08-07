@@ -1,14 +1,35 @@
 # English
 emissive
 
+# Names
+boumenot
+funtimecoding
+
 # Go
 GOPROXY
 Panicf
+covermode
+coverprofile
+gocover
+golangci
+gotest
+gotestsum
 staticcheck
 
 # Second Life
 secondlife
 inworld
 
-# GoSecondLife
+# go-second-life
 Sentryf
+
+# go-library
+gobuild
+golint
+goupdate
+
+# Task
+cmds
+
+# Kubernetes
+apimachinery
