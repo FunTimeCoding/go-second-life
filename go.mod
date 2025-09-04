@@ -1,11 +1,11 @@
 module github.com/funtimecoding/go-second-life
 
-go 1.25.0
+go 1.25.1
 
 require (
-	github.com/funtimecoding/go-library v0.10.84
+	github.com/funtimecoding/go-library v0.10.94
 	github.com/getsentry/sentry-go v0.35.1
-	golang.org/x/exp v0.0.0-20250813145105-42675adae3e6
+	golang.org/x/exp v0.0.0-20250819193227-8b4c13bb791b
 )
 
 require (
@@ -29,9 +29,11 @@ require (
 	github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 // indirect
 	github.com/rivo/uniseg v0.4.7 // indirect
 	github.com/sanity-io/litter v1.5.8 // indirect
+	github.com/stretchr/testify v1.11.1 // indirect
 	github.com/xo/terminfo v0.0.0-20220910002029-abceb7e1c41e // indirect
 	golang.org/x/net v0.43.0 // indirect
 	golang.org/x/sys v0.35.0 // indirect
 	golang.org/x/text v0.28.0 // indirect
+	gopkg.in/yaml.v3 v3.0.1 // indirect
 	gotest.tools/v3 v3.5.2 // indirect
 )
