@@ -2,23 +2,18 @@
 emissive
 
 # Names
-boumenot
 funtimecoding
 
 # Go
-GOPROXY
 Panicf
-covermode
-coverprofile
-gocover
 golangci
 gotest
 gotestsum
 staticcheck
 
 # Second Life
-secondlife
 inworld
+secondlife
 
 # go-second-life
 Sentryf
@@ -30,6 +25,3 @@ goupdate
 
 # Task
 cmds
-
-# Kubernetes
-apimachinery
