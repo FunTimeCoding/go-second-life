@@ -1,3 +1,4 @@
 ---
 version: '2'
+run: {allow-serial-runners: true}
 linters: {settings: {staticcheck: {checks: ['-QF1005']}}}
