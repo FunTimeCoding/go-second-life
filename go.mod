@@ -4,7 +4,7 @@ go 1.25.3
 
 require (
 	github.com/funtimecoding/go-library v0.10.184
-	github.com/getsentry/sentry-go v0.36.0
+	github.com/getsentry/sentry-go v0.36.1
 	golang.org/x/exp v0.0.0-20251017212417-90e834f514db
 )
 
