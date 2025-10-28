@@ -65,6 +65,8 @@ github.com/funtimecoding/go-library v0.10.194 h1:PDylAG4xdtDfzl8qR1RQG6ivqQiPIeM
 github.com/funtimecoding/go-library v0.10.194/go.mod h1:H8lTx9Zl6odfiDah2my0vDMNpixs24O1OxnhO5CFLUQ=
 github.com/funtimecoding/go-library v0.10.196 h1:qZQl4wsOt7rLJQsLPFZa+q98Vv/9pNi0TGN/RvlW/7U=
 github.com/funtimecoding/go-library v0.10.196/go.mod h1:H8lTx9Zl6odfiDah2my0vDMNpixs24O1OxnhO5CFLUQ=
+github.com/funtimecoding/go-library v0.10.197 h1:yfqNfLJjfZHzKdFVmpmTthNYHfi2E3Bw4zgkp9wqJ2U=
+github.com/funtimecoding/go-library v0.10.197/go.mod h1:ymPAPCFVURSRzmBXeVhqWeuUGKnt+BTjY57ziUEOiPE=
 github.com/getsentry/sentry-go v0.29.0/go.mod h1:jhPesDAL0Q0W2+2YEuVOvdWmVtdsr1+jtBrlDEVWwLY=
 github.com/getsentry/sentry-go v0.36.1 h1:kMJt0WWsxWATUxkvFgVBZdIeHSk/Oiv5P0jZ9e5m/Lw=
 github.com/getsentry/sentry-go v0.36.1/go.mod h1:p5Im24mJBeruET8Q4bbcMfCQ+F+Iadc4L48tB1apo2c=

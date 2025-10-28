@@ -3,7 +3,7 @@ module github.com/funtimecoding/go-second-life
 go 1.25.3
 
 require (
-	github.com/funtimecoding/go-library v0.10.196
+	github.com/funtimecoding/go-library v0.10.197
 	github.com/getsentry/sentry-go v0.36.1
 	golang.org/x/exp v0.0.0-20251023183803-a4bb9ffd2546
 )
