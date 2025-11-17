@@ -64,8 +64,8 @@ github.com/fsnotify/fsnotify v1.6.0/go.mod h1:sl3t1tCWJFWoRz9R8WJCbQihKKwmorjAbS
 github.com/funtimecoding/go-library v0.10.210 h1:7r8bSICIMKP6aFWQwa16hFBwuNfgQgvsN1Xf+nLHqmI=
 github.com/funtimecoding/go-library v0.10.210/go.mod h1:yKjSFAEGnj1yO2+XYBdwDFJSqUt9I9pCcKzKkRXaZ/w=
 github.com/getsentry/sentry-go v0.29.0/go.mod h1:jhPesDAL0Q0W2+2YEuVOvdWmVtdsr1+jtBrlDEVWwLY=
-github.com/getsentry/sentry-go v0.37.0 h1:5bavywHxVkU/9aOIF4fn3s5RTJX5Hdw6K2W6jLYtM98=
-github.com/getsentry/sentry-go v0.37.0/go.mod h1:eRXCoh3uvmjQLY6qu63BjUZnaBu5L5WhMV1RwYO8W5s=
+github.com/getsentry/sentry-go v0.38.0 h1:S8Xui7gLeAvXINVLMOaX94HnsDf1GexnfXGSNC4+KQs=
+github.com/getsentry/sentry-go v0.38.0/go.mod h1:eRXCoh3uvmjQLY6qu63BjUZnaBu5L5WhMV1RwYO8W5s=
 github.com/gin-contrib/sse v0.1.0/go.mod h1:RHrZQHXnP2xjPF+u1gW/2HnVO7nvIa9PG3Gm+fLHvGI=
 github.com/gin-gonic/gin v1.8.1/go.mod h1:ji8BvRH1azfM+SYow9zQ6SZMvR8qOMZHmsCuWR9tTTk=
 github.com/go-errors/errors v1.4.2 h1:J6MZopCL4uSllY1OfXM374weqZFFItUbrImctkmUxIA=
