@@ -3,7 +3,7 @@ module github.com/funtimecoding/go-second-life
 go 1.25.4
 
 require (
-	github.com/funtimecoding/go-library v0.10.214
+	github.com/funtimecoding/go-library v0.10.215
 	github.com/getsentry/sentry-go v0.38.0
 	golang.org/x/exp v0.0.0-20251113190631-e25ba8c21ef6
 )
@@ -22,7 +22,7 @@ require (
 	github.com/fatih/color v1.18.0 // indirect
 	github.com/google/go-cmp v0.7.0 // indirect
 	github.com/gorilla/websocket v1.5.4-0.20250319132907-e064f32e3674 // indirect
-	github.com/lucasb-eyer/go-colorful v1.2.0 // indirect
+	github.com/lucasb-eyer/go-colorful v1.3.0 // indirect
 	github.com/mattn/go-colorable v0.1.14 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/mattn/go-runewidth v0.0.19 // indirect
