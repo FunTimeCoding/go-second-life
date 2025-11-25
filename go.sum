@@ -61,8 +61,8 @@ github.com/fsnotify/fsnotify v1.4.7/go.mod h1:jwhsz4b93w/PPRr/qN1Yymfu8t87LnFCMo
 github.com/fsnotify/fsnotify v1.4.9/go.mod h1:znqG4EE+3YCdAaPaxE2ZRY/06pZUdp0tY4IgpuI1SZQ=
 github.com/fsnotify/fsnotify v1.5.4/go.mod h1:OVB6XrOHzAwXMpEM7uPOzcehqUV2UqJxmVXmkdnm1bU=
 github.com/fsnotify/fsnotify v1.6.0/go.mod h1:sl3t1tCWJFWoRz9R8WJCbQihKKwmorjAbSClcnxKAGw=
-github.com/funtimecoding/go-library v0.10.218 h1:5L4o4L6+4Uwg3J/KmvbynS2TxuN17J9UeqiGlcZ8Oq0=
-github.com/funtimecoding/go-library v0.10.218/go.mod h1:k4luNdM78TqcYhbQz5OxncWMfU2n4Tlv9ZgAB8oo0Ug=
+github.com/funtimecoding/go-library v0.10.219 h1:Pj1ZCCbQL0SVYfHg20BkOzBIuypv3yPdZEOrz6jEk3U=
+github.com/funtimecoding/go-library v0.10.219/go.mod h1:l3eOxxC7b3Gyn/RV16o/mF4HwpB5jNXal/LRsFGE2W8=
 github.com/getsentry/sentry-go v0.29.0/go.mod h1:jhPesDAL0Q0W2+2YEuVOvdWmVtdsr1+jtBrlDEVWwLY=
 github.com/getsentry/sentry-go v0.39.0 h1:uhnexj8PNCyCve37GSqxXOeXHh4cJNLNNB4w70Jtgo0=
 github.com/getsentry/sentry-go v0.39.0/go.mod h1:eRXCoh3uvmjQLY6qu63BjUZnaBu5L5WhMV1RwYO8W5s=
