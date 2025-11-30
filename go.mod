@@ -3,7 +3,7 @@ module github.com/funtimecoding/go-second-life
 go 1.25.4
 
 require (
-	github.com/funtimecoding/go-library v0.10.221
+	github.com/funtimecoding/go-library v0.10.222
 	github.com/getsentry/sentry-go v0.40.0
 	golang.org/x/exp v0.0.0-20251125195548-87e1e737ad39
 )
@@ -16,7 +16,8 @@ require (
 	github.com/charmbracelet/x/ansi v0.10.1 // indirect
 	github.com/charmbracelet/x/cellbuf v0.0.13-0.20250311204145-2c3ea96c31dd // indirect
 	github.com/charmbracelet/x/term v0.2.1 // indirect
-	github.com/clipperhouse/uax29/v2 v2.2.0 // indirect
+	github.com/clipperhouse/stringish v0.1.1 // indirect
+	github.com/clipperhouse/uax29/v2 v2.3.0 // indirect
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
 	github.com/docker/go-units v0.5.0 // indirect
 	github.com/fatih/color v1.18.0 // indirect
