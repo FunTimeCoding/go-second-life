@@ -5,7 +5,7 @@ go 1.25.5
 require (
 	github.com/funtimecoding/go-library v0.10.229
 	github.com/getsentry/sentry-go v0.40.0
-	golang.org/x/exp v0.0.0-20251125195548-87e1e737ad39
+	golang.org/x/exp v0.0.0-20251209150349-8475f28825e9
 )
 
 require (
@@ -33,7 +33,7 @@ require (
 	github.com/sanity-io/litter v1.5.8 // indirect
 	github.com/stretchr/testify v1.11.1 // indirect
 	github.com/xo/terminfo v0.0.0-20220910002029-abceb7e1c41e // indirect
-	golang.org/x/mod v0.30.0 // indirect
+	golang.org/x/mod v0.31.0 // indirect
 	golang.org/x/net v0.47.0 // indirect
 	golang.org/x/sys v0.38.0 // indirect
 	golang.org/x/text v0.31.0 // indirect
