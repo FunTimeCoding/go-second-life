@@ -3,7 +3,7 @@ module github.com/funtimecoding/go-second-life
 go 1.25.5
 
 require (
-	github.com/funtimecoding/go-library v0.10.254
+	github.com/funtimecoding/go-library v0.10.256
 	github.com/getsentry/sentry-go v0.40.0
 	golang.org/x/exp v0.0.0-20251219203646-944ab1f22d93
 )
@@ -33,7 +33,7 @@ require (
 	github.com/sanity-io/litter v1.5.8 // indirect
 	github.com/stretchr/testify v1.11.1 // indirect
 	github.com/xo/terminfo v0.0.0-20220910002029-abceb7e1c41e // indirect
-	golang.org/x/mod v0.31.0 // indirect
+	golang.org/x/mod v0.32.0 // indirect
 	golang.org/x/net v0.48.0 // indirect
 	golang.org/x/sys v0.39.0 // indirect
 	golang.org/x/text v0.32.0 // indirect
