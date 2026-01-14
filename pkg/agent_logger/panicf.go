@@ -19,7 +19,7 @@ func (l *Logger) Panicf(
 
 	if l.agent == key.Null {
 		l.generic.Panicf("%s\n", t)
-	} else {
-		l.generic.Panicf("%s %s\n", l.agent, t)
 	}
+
+	l.generic.Panicf("%s %s\n", l.agent, t)
 }
