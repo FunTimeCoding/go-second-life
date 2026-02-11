@@ -5,7 +5,7 @@ go 1.25.6
 require (
 	github.com/funtimecoding/go-library v0.10.275
 	github.com/getsentry/sentry-go v0.42.0
-	golang.org/x/exp v0.0.0-20260209203927-2842357ff358
+	golang.org/x/exp v0.0.0-20260211191109-2735e65f0518
 )
 
 require (
