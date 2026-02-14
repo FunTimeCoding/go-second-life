@@ -1,6 +1,6 @@
 package writer
 
-import "github.com/funtimecoding/go-library/pkg/sentry"
+import "github.com/funtimecoding/go-library/pkg/errors/sentry"
 
 func (w *Writer) bytes(body []byte) {
 	_, e := w.writer.Write(body)
